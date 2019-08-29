@@ -519,9 +519,9 @@ function init_local_manifest() {
 	read -p "- Do you want to sync gapps packages? (y/N) " g
         if [[ $g == *"y"* ]];then
 		g_clone https://github.com/opengapps/aosp_build vendor/opengapps/build
-		g_clone https://gitlab.nezorfla.me/opengapps/all vendor/opengapps/sources/all
-		g_clone https://gitlab.nezorfla.me/opengapps/arm vendor/opengapps/sources/arm
-		g_clone https://gitlab.nezorfla.me/opengapps/arm64 vendor/opengapps/sources/arm64
+		g_clone https://gitlab.opengapps.org/opengapps/all vendor/opengapps/sources/all
+		g_clone https://gitlab.opengapps.org/opengapps/arm vendor/opengapps/sources/arm
+		g_clone https://gitlab.opengapps.org/opengapps/arm64 vendor/opengapps/sources/arm64
 	fi
 }
 
